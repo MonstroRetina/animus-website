@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
+.kalam {
+    font-family: 'Kalam', cursive;  
+}
+
+body {
+    background-color: #242227;
+    background-image: url("../resources/images/background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+header div {
+    font-size: 400%;
+    color: #18ffff;
+}
+
+.webpage-sections-container {
+    display: flex;
+    justify-content: center;
+}
+
+.webpage-sections {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    min-width: 700px;
+    font-size: 150%;
+    color: #18ffff;
+    font-weight: bolder;
+    margin: 2%;
+}
+
+.section-title:hover {
+    text-shadow: 0 0 20px #18ffff;
+    color: white;
+    cursor: pointer;
+}
+
+.content-container {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    min-width: 500px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-container {
+        width: 60%;
+    }   
+}
+
+.content-container img {
+    max-width: 100%;
+}
+
+.comic-page-navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comic-page-navigation img {
+    margin: 1% 3% 1% 3%;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px){
+    .side {
+        background-color: rgba(35, 33, 38, 0.5);
+        min-height: 800px; 
+        width: 15%;
+        min-width: 300px;
+        margin: 0.8% 5% 1% 10px;
+        box-shadow: 0px 0px 5px 5px rgba(35, 33, 38, 0.5);
+        display: flex;
+        justify-content: center;
+    }
+
+    .side p {
+        font-family: 'Kalam', cursive;
+        font-size: 150%;
+        color: white;
+        max-width: 230px;
+    }
+}
+
+.social-media-icons {
+    display: none;
+}
+
+.side p {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px){
+    .social-media-icons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .side p {
+        display: block;
+    }
+}
+
+
+@media only screen {
+    .middle-section-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.comments {
+    background-color: white;
+}

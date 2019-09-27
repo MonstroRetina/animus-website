@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style\style.css">
+    <script src="logic\navigation.js"></script>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+    <main>
+
+        <a href="/">
+            <header>
+                <img src="resources/images/header tittle.png"
+                    onmouseover="this.src='resources/images/header tittle hover.png'"
+                    onmouseout="this.src='resources/images/header tittle.png'">
+            </header>
+        </a>
+
+        <div class="webpage-sections-container">
+            <section class="webpage-sections">
+                <p class="section-title kalam">Cast</p>
+                <div class="section-title kalam">Blog</div>
+                <div class="section-title kalam">Support us</div>
+                <div class="section-title kalam">Archive</div>
+                <div class="section-title kalam">PT-BR</div>
+            </section>
+        </div>
+
+        <div class="middle-section-wrapper">
+            <div class="content-container">
+                <section class="comic-page-container">
+                    <!-- <a onclick="nextPage()"> -->
+                    <img src="" id="displayedPage" usemap="#testeMap">
+                    <map name="testeMap">
+                        <area onclick="previousPage()" coords="0,0,324,1115" shape="rect">
+                        <area onclick="nextPage()" coords="467,1116,799,4" shape="rect">
+                    </map>
+                    <!-- </a> -->
+                    <script>
+                        document.getElementById('displayedPage').setAttribute('src', pages[currentPage]);
+                    </script>
+                    <!-- <img src="resources/testPage.jpg"> -->
+                </section>
+
+                <section class="comic-page-navigation">
+                    <img src="resources/images/botoes navegaçao_first.png" id="firstButton"
+                        onmouseover="this.src='resources/images/botoes navegaçao_first_hover.png'"
+                        onmouseout="this.src='resources/images/botoes navegaçao_first.png'" onclick="firstPage()">
+
+                    <img src="resources/images/botoes navegaçao_previous.png" id="previousButton"
+                        id="first-previous-buttons"
+                        onmouseover="this.src='resources/images/botoes navegaçao_previous hover.png'"
+                        onmouseout="this.src='resources/images/botoes navegaçao_previous.png'" onclick="previousPage()">
+
+                    <img src="resources/images/botoes navegaçao_next.png" id="nextButton"
+                        onmouseover="this.src='resources/images/botoes navegaçao_next hover.png'"
+                        onmouseout="this.src='resources/images/botoes navegaçao_next.png'" onclick="nextPage()">
+
+                    <img src="resources/images/botoes navegaçao_last.png" id="latestButton"
+                        onmouseover="this.src='resources/images/botoes navegaçao_last hover.png'"
+                        onmouseout="this.src='resources/images/botoes navegaçao_last.png'" onclick="latestPage()">
+
+
+                </section>
+                <div class="comments" id="commento"></div>
+                <script src="https://cdn.commento.io/js/commento.js"></script>
+            </div>
+
+            <div class="side-menu-">
+                <div class="social-media-icons">
+                    <img src="resources/images/icons_SM_FB.PNG"
+                        onmouseover="this.src='resources/images/icons_SM_fb_hover.PNG'"
+                        onmouseout="this.src='resources/images/icons_SM_FB.PNG'">
+
+                    <img src="resources/images/icons_SM_IG.PNG"
+                        onmouseover="this.src='resources/images/icons_SM_ig_hover.PNG'"
+                        onmouseout="this.src='resources/images/icons_SM_IG.PNG'">
+
+                    <img src="resources/images/icons_SM_tumblr.PNG"
+                        onmouseover="this.src='resources/images/icons_SM_tumblr_hover.PNG'"
+                        onmouseout="this.src='resources/images/icons_SM_tumblr.PNG'">
+                </div>
+                <div class="side">
+                    <div>
+                        <p>
+                            A young weaver apprentice unveils an old secret about herself and the magic that inhabits
+                            her
+                            village and its people.
+                        </p>
+                        <p>
+                            When mysterious invaders arrive, she must craft her own magic to save her people before
+                            they're
+                            taken away forever.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer></footer>
+
+    </main>
+</body>
+
+</html>
